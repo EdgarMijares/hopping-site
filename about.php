@@ -14,12 +14,7 @@
 	<?php include('_includes/landing_header.php'); ?>
 	<div id="big-container">
 		<h1 id="about-title">¿Quienes somos?</h1>
-		<p id="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p id="about-paragraph">Hopping App esta siendo desarrollada por un equipo de jovenes duranguenses... espérala.</p>
 	</div>
 	<?php include('_includes/footer.php'); ?>	
 </body>

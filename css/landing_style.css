@@ -37,7 +37,10 @@ header{
 }
 #menu li a:hover{
 	color: #ED1D60;
+	transition: color .25s;
 	-moz-transition: color .25s;
+	-webkit-transition: color .25s;
+	-o-transition: color .25s;
 }
 #big-container{
 	position: relative;
@@ -64,7 +67,7 @@ header{
 	padding-top: 50px;
 	line-height: 1.5;
 	width: 80%;
-	text-align: justify;
+	text-align: center;
 }
 /*
 *	Contact

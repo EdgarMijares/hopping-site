@@ -19,7 +19,7 @@ function initMap() {
     var latLng = {lat: latitude, lng: longitude};
     map = new google.maps.Map(document.getElementById('googleMap'), {
     	center: latLng,
-        zoom: 17,
+        zoom: 15,
         disableDefaultUI: true,
         styles: myStyles
     });
@@ -60,6 +60,4 @@ function initMap() {
             }
         }
     });
-
-    
 }//end function initMap

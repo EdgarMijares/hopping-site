@@ -32,7 +32,6 @@
 	<ul id="side-menu-items">
 		<li><a href="overview.php" id="link-account-details">Detalles de Cuenta</a></li>
 		<li><a href="promos.php" id="link-promos">Promos</a></li>
-		<li><a href="#">mas</a></li>
 		<li><a href="options.php">Opciones</a></li>
 	</ul>	
 </div>
