@@ -1,0 +1,269 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+#side-menu{
+	position: relative;
+	background: gray;
+	float: left;
+	width: 25%;
+	height: auto;
+	flex-direction: column;
+}
+#profile-image-container{
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 5% 0;
+	height: auto;
+	background: #ED1D60;
+}
+#description-container{
+	height: 100px;
+	background: black;
+}
+#profile-thumnail{
+	display: block;
+	margin: 0 auto;
+	width: 192px;
+	height: 192px;
+	border: 2px solid gray;
+	border-radius: 50%;
+}
+#place-name-container{
+	height: 50px;
+}
+.place-name{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+#side-menu-items{
+	position: relative;
+	display: block;
+}
+#side-menu-items{
+	padding: 0;
+	list-style: none;
+}
+#side-menu-items li{
+	height: 54px;
+	border-top: 1px solid black;
+}
+#side-menu-items li a{
+	position: relative;
+	display: block;
+	color: white;
+	text-decoration: none;
+	height: 54px;
+	text-align: center;
+	line-height: 54px;
+}
+#side-menu-items li a:hover{
+	background: #ED1D60;
+}
+
+#content{
+	background: #f8f8f8;
+	width: 75%;
+	float: right;
+	height: 500px;
+}
+#logout-link{
+	position: absolute;
+}
+body{
+	background: #222326;
+}
+#big-container{
+	width: 90%;
+	margin: 0 auto;
+}
+.hidding{
+	display: none;
+}
+/* PANEL HEADER */
+#panel-header{
+	height: 110px;
+	background: black;
+}
+#place-name-header{
+	color: white;
+	position: relative;
+	top: 27.5px;
+}
+/* PROMOS-PANEL */
+#promo-editor{
+	display: block;
+	padding-top: 40px;
+}
+.day-icon{
+	margin-left: 15px;
+	width: 64px;
+	height: 64px;
+}
+.day-promo{
+	display: block;
+	padding: 10px;
+}
+#promos-panel{
+	padding: 0 60px 60px 60px;
+}
+.promo-textarea{
+	display: block;
+	float: right;
+	height: 64px;
+	width: 80%;
+	resize: none;
+	padding: 5px;
+	color: gray;
+	border: .5px solid black;
+	border-radius: 5px;
+}
+#save-changes{
+	position: relative;
+	top: 30px;
+	height: 50px;
+	width: 250px;
+	border-radius: 5px;
+	background: green;
+	border: none;
+	padding: 0;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	font-size: 0.8em;
+}
+#save-changes:hover{
+	background: #ED1D60;
+	color: white;
+	cursor: pointer;
+}
+/* OVERVIEW PANEL */
+#overview-panel{
+	padding: 60px;
+}
+#account-editor{
+	height: 476.8px;
+	padding: 40px;
+}
+#account-editor label, #account-editor .input-container{
+	display: block;
+	margin: 20px 0;
+}
+.input-container img{
+	position: relative;
+	float: right;
+	border-radius: 5px;
+	top: -40px;
+	height: 40px;
+	width: 40px;
+}
+.input-container img:hover{
+	cursor: pointer;
+	background: green;
+	top: -40;
+	height: 40;
+	width: 40;
+}
+.input-container input:disabled{
+	background: #ED1D60;
+	opacity: 0.8;
+	color: white;
+}
+.input-container input{
+	border-radius: 5px;
+	display: block;
+	padding: 5px 40px 5px 5px;
+	height: 40px;
+	width: 100%;
+	color: gray;
+	border: .5px solid black;
+	font-size: 1.2em;
+	font-weight: lighter;
+}
+#file-label{
+	position: absolute;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 192px;
+	height: 192px;
+	border: 2px solid gray;
+	border-radius: 50%;
+	opacity: 0;
+	-moz-transition: opacity .2s;
+	background: #ED1D60;
+}
+.input-container{
+	width: 100%;
+}
+#account-edite-profile-image-container{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 192px;
+	height: 192px;
+	border-radius: 50%;
+}
+#account-edite-profile-image-container:hover #file-label{
+	cursor: pointer;
+	opacity: 0.8;
+	-moz-transition: opacity .2s;
+}
+#change-image-icon{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	top: 25px;
+}
+#account-edite-profile-image{
+	display: block;
+	margin: 0 auto;
+	width: 192px;
+	height: 192px;
+	border: 2px solid gray;
+	border-radius: 50%;
+}
+#edit-profile-image-button{
+	display: none;
+}
+
+#googleMap{
+	display: block;
+	position: relative;
+	margin-top: 10px;
+	height: 500px;
+	width: 100%;
+}
+
+#save-button{
+	position: relative;
+	top: 30px;
+	height: 50px;
+	width: 250px;
+	border-radius: 5px;
+	background: green;
+	border: none;
+	padding: 0;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	font-size: 0.8em;
+}
+#save-button:hover{
+	background: #ED1D60;
+	color: white;
+	cursor: pointer;
+}
+
+/* OPTIONS PANEL */
+#logout-link{
+	text-decoration: none;
+	background: red;
+	padding: 10px;
+	color: white;
+	border-radius: 15px;
+}

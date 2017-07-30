@@ -1,0 +1,63 @@
+footer{
+	position: relative;
+	padding: 30px;
+	height: 150px;
+	background: black;
+}
+#footer-hopping-logo{
+	display: block;
+	position: absolute;
+	width: 96px;
+	height: 96px;
+}
+#social-media-list{
+	position: absolute;
+	display: block;
+	list-style: none;
+	top: 45px;
+	right: 5%;
+}
+#social-media-list li{
+	margin-left: 10px;
+	display: inline-block;
+}
+.social-media-links{
+	height: 32px;
+	width: 32px;
+}
+.social-media-links:hover{
+	cursor: pointer;
+}
+/*
+*	Phone media
+*/
+@media screen and (max-width: 390px) {
+	footer{
+		height: 400px;
+	}
+	#footer-hopping-logo{
+		display: block;
+		position: relative;
+		margin: 0 auto 50px auto;
+		width: 128px;
+		height: 128px;
+	}
+	#social-media-list{
+		padding: 0;
+		width: 64px;
+		position: relative;
+		display: block;
+		list-style: none;
+		margin: 0 auto;
+		top: initial;
+		right: initial;
+	}
+	#social-media-list li{
+		margin: 10px 0 0 0;
+		display: inline-block;
+	}
+	.social-media-links{
+		height: 64px;
+		width: 64px;
+	}
+}
