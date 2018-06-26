@@ -1,6 +1,6 @@
 var map;
 var durango = {lat: 24.024609, lng: -104.670267};
-var image = 'icons/Ubicacion_Hopping.png';
+var image = 'webicons/Ubicacion_Hopping.png';
 var marker;
 var latitude;
 var longitude;

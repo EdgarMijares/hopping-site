@@ -9,8 +9,9 @@
 <html>
 <head>
 	<title>Options</title>
-	<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="webicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="webicons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/admin_style.css">
 	<link rel="stylesheet" type="text/css" href="css/footer_style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>	

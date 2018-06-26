@@ -1,0 +1,10 @@
+#   NEW   #
+
+register.php
+css/register.css
+js/register.js
+
+
+#   UPDATED    #
+login.php
+logic/app_connection.php up

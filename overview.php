@@ -9,8 +9,9 @@
 <html>
 <head>
 	<title>Hopping | Console</title>
-	<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="webicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="webicons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/admin_style.css">
 	<link rel="stylesheet" type="text/css" href="css/footer_style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>	
@@ -29,7 +30,7 @@
 			<div id="overview-panel">
 				<form id="profile-image-form" action="logic/change_image.php" method="POST" enctype="multipart/form-data">
 					<div id="account-edite-profile-image-container">
-						<label for="edit-profile-image-button" id="file-label"><img src="icons/edit-icon.png" id="change-image-icon"></label>
+						<label for="edit-profile-image-button" id="file-label"><img src="webicons/edit-icon.png" id="change-image-icon"></label>
 						<input type="file" id="edit-profile-image-button" name="image" accept="image/*">
 						<?php 
 						if ($_SESSION['image-changed']) {
@@ -53,7 +54,7 @@
 							echo "<label for='place-name'>".$label."</label>
 									<div class='input-container'>
 										<input type='text' name='".$names[$i]."'' id='input-".$i."' disabled value='".$row[$names[$i]]."'>
-										<img src='icons/edit-icon.png' id='edit-input-".$i."'>						
+										<img src='webicons/edit-icon.png' id='edit-input-".$i."'>						
 									</div>";
 						}
 					?>

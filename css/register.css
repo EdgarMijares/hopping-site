@@ -1,0 +1,29 @@
+*{
+	font-family: sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+}
+input.register-input{
+	padding: 10px;
+	width: 100%;
+}
+table#form-table{
+	margin: 0 auto;
+	width: 50%;
+}
+.log-button{
+	border: none;
+	border-radius: 5px;
+	margin-top: 8px;
+	height: 32px;
+	color: white;
+	font-weight: bold;
+	background: black;
+	width: 60%;
+}
+.log-button:hover{
+	cursor: pointer;
+}
+#form-form{
+	margin-top: 50px;
+}

@@ -44,7 +44,7 @@ body{
 	border-radius: 5px;
 	border: none;
 }
-#login{
+.log-button{
 	border: none;
 	border-radius: 5px;
 	margin-top: 8px;
@@ -54,6 +54,14 @@ body{
 	background: black;
 	width: 100%;
 }
-#login:hover{
+.log-button:hover{
 	cursor: pointer;
+}
+#sign-up{
+	background: white;
+	color: black;
+}
+#sign-up:hover{
+	background: gray;
+	color: white;
 }
