@@ -23,19 +23,20 @@
 		<?php include('_includes/side_menu.php'); ?>
 
 		<div id="content">
-			<?php include('_includes/panel_header.php');; ?>
+			<img id="mini-logo-hopping" src="webicons/imagotipo_hopping_white_background.png">
 			<div id="promos-panel">
+				<h1 class="section-title">Promociones</h1>
 				<form id="promo-editor" action="logic/update_promos.php" method="POST">
 					<?php
 						include('logic/promos_days.php');
 						for ($i=0; $i < 7; $i++) { 
 							echo "<div class='day-promo'>
-									<img class='day-icon' src='webicons/days-webicons/".$i.".png'>
+									<img  style='background:black;' class='day-icon' src='webicons/days-webicons/".$i.".png'>
 									<textarea class='promo-textarea' name='".$days[$i]."'></textarea>
 								  </div>";
 						}//end for
 					?>
-					<input type="submit" id="save-changes" value="GUARDAR">
+					<input type="submit" id="save-changes" value="Guardar">
 				</form>
 			</div>
 		</div>

@@ -26,7 +26,10 @@
 	<div id="big-container">
 		<?php include('_includes/side_menu.php'); ?>
 		<div id="content">
-			<?php include('_includes/panel_header.php');; ?>
+			<!--
+			<?php include('_includes/panel_header.php'); ?>
+			-->
+			<img id="mini-logo-hopping" src="webicons/imagotipo_hopping_white_background.png">
 			<div id="overview-panel">
 				<form id="profile-image-form" action="logic/change_image.php" method="POST" enctype="multipart/form-data">
 					<div id="account-edite-profile-image-container">

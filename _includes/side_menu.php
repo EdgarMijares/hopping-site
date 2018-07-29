@@ -18,20 +18,12 @@
 		?>
 	</div>
 	
-	<div id="place-name-container">
-		<h1 class="place-name">
-			<?php
-				echo $_SESSION['placename'];
-			?>
-		</h1>
-	</div>
-
-	<div id="description-container"></div>
-
 	<ul id="side-menu-items">
-		<li><a href="#" id="link-place-overview">Overview</a></li>
-		<li><a href="overview.php" id="link-account-details">Detalles de Cuenta</a></li>
-		<li><a href="promos.php" id="link-promos">Promos</a></li>
-		<li><a href="options.php">Opciones</a></li>
+		<li><a href="myhop.php" id="link-myhop">Mi Hop</a></li>
+		<li><a href="overview.php" id="link-overview">Detalles de Cuenta</a></li>
+		<li><a href="reservations.php" id="link-reservations">Reservaciones</a></li>
+		<li><a href="promos.php" id="link-promos">Promociones</a></li>
+		<li><a href="galeria.php" id="link-galeria">Galeria</a></li>
+		<li><a href="options.php" id="link-options">Opciones</a></li>
 	</ul>	
 </div>

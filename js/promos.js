@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$('footer').css('top',890);
 
 	// menu item selected
-	$('#link-promos').css('background','#ED1D60');
+	$('#link-promos').css('background','rgba(150,150,150,.5)');
 
 	// AJAX
 	$('#promo-editor').on('submit',function(){
