@@ -12,7 +12,7 @@
 		while($row = mysqli_fetch_assoc($result)){
 			if ($row["profileimage"]) {
 				//$row["profileimage"] = "/Applications/XAMPP/xamppfiles/htdocs/hopping-site/profile-images/".$row["profileimage"];
-				$row["profileimage"] = "http://hoppingapp.com/profile-images/".$row["profileimage"];
+				$row["profileimage"] = $row["profileimage"];
 			}
 
 			$id_place = $row["id_place"];
