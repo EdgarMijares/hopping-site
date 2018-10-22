@@ -17,13 +17,14 @@
 		echo "<img id='profile-thumnail' src='profile-images/".$_SESSION['profileimage']."'>";
 		?>
 	</div>
-	
+
 	<ul id="side-menu-items">
 		<li><a href="myhop.php" id="link-myhop">Mi Hop</a></li>
 		<li><a href="overview.php" id="link-overview">Detalles de Cuenta</a></li>
 		<li><a href="reservations.php" id="link-reservations">Reservaciones</a></li>
 		<li><a href="promos.php" id="link-promos">Promociones</a></li>
 		<li><a href="galeria.php" id="link-galeria">Galeria</a></li>
+		<li><a href="feed.php" id="link-promo-feed">Feed</a></li>
 		<li><a href="options.php" id="link-options">Opciones</a></li>
-	</ul>	
+	</ul>
 </div>

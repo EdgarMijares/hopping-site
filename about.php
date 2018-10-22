@@ -11,12 +11,20 @@
 	<script type="text/javascript" src="js/index.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body id="about-body">
 	<?php include('_includes/landing_header.php'); ?>
 	<div id="big-container">
 		<h1 id="about-title">¿Quienes somos?</h1>
-		<p id="about-paragraph">Hopping App esta siendo desarrollada por un equipo de jovenes duranguenses... espérala.</p>
+		<p id="about-paragraph">
+			¡Cambia tus noches para siempre con Hopping App! <br>
+			Hopping reúne en un solo lugar toda la información que tu necesitas para que tu noche sea como tu quieras. <br>
+			Reserva, ve promociones actualizadas en tiempo real y ¡utiliza el totalmente nuevo live feed <br> para saber que tal esta un lugar antes de llegar a el!. <br>
+			Hopping te permite conocer todo sobre tu destino, siempre, donde sea y cuando sea. <br>
+			<br><br>
+			Hopping... <br><br>
+			Change the night. <br>
+		</p>
 	</div>
-	<?php include('_includes/footer.php'); ?>	
+	<?php include('_includes/footer.php'); ?>
 </body>
 </html>

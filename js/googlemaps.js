@@ -34,7 +34,6 @@ function initMap() {
     google.maps.event.addListener(marker, 'dragend', function(){
         latitude = marker.getPosition().lat();
         longitude = marker.getPosition().lng();
-        alert("cambio a : "+latitude+","+longitude);
     });
 
     google.maps.event.addListener(map, 'click', function(event) {

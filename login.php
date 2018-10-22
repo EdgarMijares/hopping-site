@@ -10,7 +10,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 </head>
-<body>
+<body style="background:black;">
 	<div id="big-container">
 		<div id="main-container">
 			<!---->
@@ -22,16 +22,16 @@
 				<form id="login_form" action="logic/login_logic.php" method="POST">
 					<input type="text" name="user" class="input" id="user" placeholder="Username">
 					<input type="password" name="password" class="input" id="password" placeholder="Password">
-					<input type="submit" name="login" class="log-button" id="login" value="Log In">
+					<input type="submit" name="login" class="log-button" id="login" value="Iniciar Sesion">
 				</form>
 			</div>
-			<?php 
-				/*
-					<form action="register.php" method="POST">
-						<input type="submit" name="register" class="log-button" id="sign-up" value="Sign Up">
-					</form>
-				*/
-			?>
+
+			<!--
+			<form action="register.php" method="POST">
+				<input type="submit" name="register" class="log-button" id="sign-up" value="Registrarse">
+			</form>
+			-->
+
 		</div>
 	</div>
 	<?php

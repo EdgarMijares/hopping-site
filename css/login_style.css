@@ -23,13 +23,19 @@ body{
 #logo-container{
 	width: 128px;
 	height: 128px;
+	border-radius: 64px;
 	margin: 10px auto;
+	background: white;
+}
+#logo-container:hover{
+	cursor: pointer;
 }
 #hopping-logo{
 	display: block;
 	margin: 0 auto;
 	height: 128px;
 	width: 128px;
+	border-radius: 64px;
 }
 .input{
 	font-size: 16px;
@@ -40,7 +46,7 @@ body{
 	padding: 5px;
 	margin-top: 8px;
 	color: white;
-	font-weight: bold;
+	font-weight: lighter;
 	height: 32px;
 	width: 100%;
 	border-radius: 5px;
@@ -51,9 +57,9 @@ body{
 	border-radius: 5px;
 	margin-top: 8px;
 	height: 32px;
-	color: white;
+	color: black;
 	font-weight: bold;
-	background: black;
+	background: white;
 	width: 100%;
 }
 .log-button:hover{

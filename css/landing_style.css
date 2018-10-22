@@ -8,9 +8,30 @@ header{
 	margin: 0 auto;
 	display: block;
 }
-#logo{
+#about-body{
+	background: URL('../webicons/landing-backgrounds/background_02.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#index-body{
+	background: URL('../webicons/landing-backgrounds/background_01.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#contact-body{
+	background: URL('../webicons/landing-backgrounds/background_03.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.logo-container{
 	position: relative;
 	top: 30px;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.5);
+	width: 308.4px;
+	height: 96px;
+}
+#logo-img{
 	width: 308.4px;
 	height: 96px;
 }
@@ -30,8 +51,9 @@ header{
 #menu li a{
 	display: block;
 	text-decoration: none;
-	color: black;
+	color: white;
 	line-height: 32px;
+	line-height: 48px;
 	text-align: center;
 	-moz-transition: color .25s;
 }
@@ -53,12 +75,10 @@ header{
 	margin: 50px auto 0 auto;
 	width: 60%;
 }
-/*
-*	About
-*/
 #about-title{
 	text-align: center;
 	display: block;
+	color: white;
 	padding-top: 50px;
 	margin-bottom: 50px;
 }
@@ -67,11 +87,9 @@ header{
 	padding-top: 50px;
 	line-height: 1.5;
 	width: 80%;
+	color: white;
 	text-align: center;
 }
-/*
-*	Contact
-*/
 #contact-title{
 	text-align: center;
 	display: block;
@@ -99,6 +117,7 @@ header{
 }
 #send-button{
 	color: white;
+	border: none;
 	border-radius: 10px;
 	background: #ED1D60;
 	float: right;
@@ -106,24 +125,25 @@ header{
 	display: block;
 	margin-top: 10px;
 	resize: none;
-	border: .25px solid gray;
 	box-sizing: border-box;
 	font-size: 1em;
 	padding: 10px;
 	line-height: 1em;
 }
 /*
-*	Tablet media
+*	TABLET MEDIA
 */
 @media screen and (max-width: 970px) {
 	header{
 		width: 100%;
 		height: 200px;
 	}
-	#logo{
+	.logo-container{
+		margin: 0 auto;
+	}
+	#logo-img{
 		position: relative;
 		display: block;
-		top: 30px;
 		width: 308.4px;
 		height: 96px;
 		margin: 0 auto;
@@ -140,15 +160,19 @@ header{
 	#contact-form{
 		width: 70%;
 	}
-}
+}/* END TABLET MEDIA */
+
 /*
-*	Phone media
+*	PHONE MEDIA
 */
 @media screen and (max-width: 390px) {
 	header{
 		height: 77.6px;
 	}
-	#logo{
+	.logo-container{
+		top: 0;
+	}
+	#logo-img{
 		position: relative;
 		display: block;
 		top: 15px;
@@ -176,7 +200,7 @@ header{
 		display: block;
 	}
 	#menu li a{
-		line-height: 48px;
+		color: black;
 	}
 	#responsive-menu-button{
 		position: absolute;
@@ -209,4 +233,4 @@ header{
 	#contact-form{
 		width: 80%;
 	}
-}
+}/* END PHONE MEDIA*/

@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	$(this).scrollTop(0);
-	$('#side-menu').css('height',1440);
-	$('#content').css('height',1440);
-	$('footer').css('top',1440);
+	$('#side-menu').css('height',1240);
+	$('#content').css('height',1240);
+	$('footer').css('top',1240);
 
 	// side menu item selected
 	$('#link-overview').css('background','rgba(150,150,150,.5)');
@@ -22,7 +22,7 @@ $(document).ready(function() {
 	$('#edit-input-3').on('click', function(){
 		$("#input-3").removeAttr('disabled');
 	});
-	
+
 	$('#edit-profile-image-button').on('change', function(e){
 		$('#profile-image-form').submit();
 	});

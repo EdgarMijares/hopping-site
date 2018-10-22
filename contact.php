@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="js/index.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body id="contact-body">
 	<?php include('_includes/landing_header.php'); ?>
 	<div id="big-container">
 	<h1 id="contact-title">Contactanos</h1>
@@ -21,10 +21,10 @@
 			<input class="inputs" type="text" name="name" placeholder="Nombre">
 			<textarea class="inputs" id="message-textarea" placeholder="Mensaje"></textarea>
 			<input id="send-button" type="submit" value="Enviar">
-		</form>		
+		</form>
 	</div>
 
 	</div>
-	<?php include('_includes/footer.php'); ?>	
+	<?php include('_includes/footer.php'); ?>
 </body>
 </html>

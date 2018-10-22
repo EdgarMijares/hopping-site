@@ -12,11 +12,10 @@
 	<script type="text/javascript" src="js/index.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body id="index-body">
 	<?php include('_includes/landing_header.php'); ?>
 	<div id="big-container">
-		<img id="under-construction" src="webicons/website-under-construction_8329.jpeg">
 	</div>
-	<?php include('_includes/footer.php'); ?>	
+	<?php include('_includes/footer.php'); ?>
 </body>
 </html>

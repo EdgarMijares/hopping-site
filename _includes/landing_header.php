@@ -1,5 +1,7 @@
 <header>
-	<img src="webicons/hopping.png" id="logo">
+	<div class="logo-container">
+		<img src="webicons/hopping.png" id="logo-img">
+	</div>
 	<div id="responsive-menu-button">
 		<span class="menu-button-bar"></span>
 		<span class="menu-button-bar"></span>
