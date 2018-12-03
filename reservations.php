@@ -4,11 +4,16 @@
 		header('Location: login.php');
 	}
 
-	if (isset($_POST['aceptar-reserva'])) {
+	if (isset($_POST['aceptar-reserva']) && isset($_POST['fcmToken'])) {
 		$value = $_POST['aceptar-reserva'];
-		echo "<script>var acceptReserveId='$value';</script>";
+		$token = $_POST['fcmToken'];
+		$placeName = $_SESSION['placename'];
+		echo "<script>
+						var placeName = '$placeName';
+						var acceptReserveId = '$value';
+						var fcmToken = '$token';
+					</script>";
 	}
-
 ?>
 <!DOCTYPE html>
 <html>

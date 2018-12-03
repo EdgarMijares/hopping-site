@@ -22,7 +22,12 @@ $(document).ready(function() {
 	var database = firebase.database();
 	var date = new Date();
 
-	var fechaHoy = date.getDate()+"-"+(date.getMonth()+1)+"-"+date.getFullYear()
+	var day = date.getDate();
+	if (day < 10) {
+		day = "0"+date.getDate();
+	}
+
+	var fechaHoy = day+"-"+(date.getMonth()+1)+"-"+date.getFullYear();
 	console.log("fecha de hoy : "+fechaHoy);
 
 	var headerContents = "<tr><th>HORA</th><th>FECHA</th><th>NOMBRE</th><th>PERSONAS</th><th>STATUS</th></tr>";
@@ -53,7 +58,7 @@ $(document).ready(function() {
 						content += "<td>"+data.nombre+"</td>";
 						content += "<td>"+data.num_personas+"</td>";
 						if (data.status == "pendiente") {
-							content += "<td><form action='reservations.php' method='post'><button class='acept-reserv-btn' name='aceptar-reserva' value='"+promoPath+"'>Aceptar Reserva</button></form></td>";
+							content += "<td><form action='reservations.php' method='post'><button class='acept-reserv-btn' name='aceptar-reserva' value='"+promoPath+"'>Aceptar Reserva</button><input type='hidden' name='fcmToken' value='"+data.fcmToken+"'></form></td>";
 						}
 						if (data.status == "aceptada") {
 							content += "<td>Aceptada</td>";
@@ -93,7 +98,7 @@ $(document).ready(function() {
 						content += "<td>"+data.nombre+"</td>";
 						content += "<td>"+data.num_personas+"</td>";
 						if (data.status == "pendiente") {
-							content += "<td><form action='reservations.php' method='post'><button class='acept-reserv-btn' name='aceptar-reserva' value='"+promoPath+"'>Aceptar Reserva</button></form></td>";
+							content += "<td><form action='reservations.php' method='post'><button class='acept-reserv-btn' name='aceptar-reserva' value='"+promoPath+"'>Aceptar Reserva</button><input type='hidden' name='fcmToken' value='"+data.fcmToken+"'></form></td>";
 						}
 						if (data.status == "aceptada") {
 							content += "<td>Aceptada</td>";
@@ -109,6 +114,21 @@ $(document).ready(function() {
 
 	if (acceptReserveId !== undefined) {
 		database.ref('/'+acceptReserveId).update({status:"aceptada"});
-	}
+		$.ajax({
+			type: 'post',
+			data: {
+				token: fcmToken,
+				placeName: placeName
+			},
+			//url: 'http://localhost:3000/',
+			url: 'https://www.hoppingapp.com:3000/',
+			success: function(data){
+				console.log('success \n'+data);
+			},
+			error: function(error){
+				console.log('error \n'+error);
+			}
+		});
+	}//end if
 
 });//end ready function
